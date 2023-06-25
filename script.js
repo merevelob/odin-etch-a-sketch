@@ -15,4 +15,4 @@ function addHoverEffect() {
     this.classList.add('squareHover');
 }
 
-createGrid(16);
+createGrid(100);
