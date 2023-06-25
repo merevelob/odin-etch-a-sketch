@@ -1,3 +1,10 @@
+:root {
+    --colorA: #615757;
+    --colorB: #616161;
+    --colorC: #141414;
+    --colorD: #4E6153;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -8,18 +15,34 @@ html {
     padding: 0;
 }
 
-.container {
+body {
     height: 100vh;
+    background-color: var(--colorB);
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    height: 96vh;
     aspect-ratio: 1 / 1;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    border: 2px solid rgb(48, 48, 48);
+    border-radius: 8px;
+    background-color: darkgray;
+    padding: 2vh;
 }
 
 .square {
     aspect-ratio: 1 / 1;
-    background-color: black;
+    background-color: var(--colorC);
+    border-bottom: 1px solid rgba(40, 40, 40, 0.3);
+    border-right: 1px solid rgba(40, 40, 40, 0.3);
 }
 
 .squareHover {
-    background-color: lime;
+    background-color: rgb(0, 200, 0);
 }
