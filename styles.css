@@ -60,14 +60,31 @@ body {
     width: 20vw;
     display: flex;
     flex-direction: column;
-    padding: 2vh 1vw;
+    padding: 2vh 4px;
     background-color: var(--colorD);
 }
-
+/**/
 .squaresNumber {
     margin: 0 auto auto;
+    text-align: center;
 }
 
+.squaresNumber > button {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+    padding: 4px 8px;
+    margin-bottom: 16px;
+    border: 2px solid var(--colorA);
+    border-radius: 4px;
+    background-color: darkgray;
+    cursor: pointer;
+}
+
+.squaresNumber > p {
+    font-family: 'LL Pixel';
+    font-size: 3vw;
+}
+/**/
 .logo {
     margin: 0 auto;
     text-align: center;
