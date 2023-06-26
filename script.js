@@ -18,4 +18,22 @@ function addHoverEffect() {
 // Initial grid
 createGrid(16);
 
-//
+// Change squares per side and display selection in the sidebar
+function changeSquares() {
+    let input = +prompt('Please enter number of squares per side.', '');
+    container.innerHTML = '';
+    if (input < 1) {
+        alert('1 is the min number of squares per side.');
+        input = 1;
+    }
+    if (input > 100) {
+        alert('100 is the max number of squares per side.');
+        input = 100;
+    } 
+    createGrid(input);
+    sqDisplay.textContent = `${input} x ${input}`;
+}
+
+const btn = document.querySelector('.squaresNumber > button');
+const sqDisplay = document.querySelector('.squaresNumber > p');
+btn.addEventListener('click', changeSquares);
