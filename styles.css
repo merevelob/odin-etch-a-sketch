@@ -70,7 +70,7 @@ body {
 }
 
 .squaresNumber > button {
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.5vw;
     padding: 4px 8px;
     border: 2px solid var(--colorC);
@@ -103,4 +103,24 @@ body {
 .logo > img {
     height: 3vw;
     width: auto;
+}
+/**/
+.info {
+    height: 80px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'LL Pixel';
+    font-size: small;
+}
+
+.info p {
+    display: flex;
+    margin: 4px auto;
+}
+
+.info img {
+    height: 16px;
+    width: auto;
+    margin: auto 4px;
 }
